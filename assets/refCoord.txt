@@ -1,0 +1,7 @@
+SPECIFIC COORDINATES
+
+Compass --  1761 x 45
+Run Toggle  --  1758 x 152
+Inventory -- 1608 x 1020
+Spellbook  --  1706 x 1020
+Lumbridge Home Teleport  --  1740 x 747
