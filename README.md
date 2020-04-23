@@ -1,2 +1,2 @@
 # Code-Goons-App
-Web app of undetermined purpose.
+Web app of awesome purpose.
