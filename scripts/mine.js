@@ -3,38 +3,35 @@ const stand = require('./standards');
 
 function main() {
     console.log('Initializing...');
-    sleep(4000);
-    goMineLumbridge();
+    stand.sleep(4000);
     mine();
     console.log('Finished');
     
 }
 
-function goMineLumbridge() {
-    robot.moveMouseSmooth(884, 563);
-    robot.mouseClick();
-}
-
 function mine() {
-    robot.moveMouseSmooth(884, 563);
+    robot.moveMouseSmooth(857, 575);
     robot.mouseClick();
     repeatMine();
 
 }
 
 function repeatMine() {
-    var pixColor = String(robot.getPixelColor(884,563));
+    for (var i = 0; i < 12; i++) {
+        pixColor = robot.getPixelColor(848, 557);
 
-    if (pixColor === '463f3f') {
-        sleep(500);
-        repeatMine();
-    }
+        if (pixColor === '645b5b') {
+            stand.sleep(500);
+            repeatMine();
+        }
 
-    else if (pixColor === '221e1e') {
-        sleep(3000);
-        robot.mouseClick();
-        repeatMine();
+        else if (pixColor === '35302f') {
+            stand.sleep(3000);
+            robot.mouseClick();
+            repeatMine();
+        }
     }
+    
     
 }
 

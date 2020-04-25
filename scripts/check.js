@@ -4,7 +4,8 @@ const stand = require('./standards');
 check();
 
 function check() {
-    sleep(2000);
+    stand.sleep(2000);
+    robot.scrollMouse(0, 10);
     pixColor = robot.getPixelColor(1760, 156);
     console.log(pixColor);
 }

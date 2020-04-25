@@ -5,7 +5,7 @@ function main() {
     console.log('Initializing...');
     stand.sleep(4000);
     stand.goHome();
-    // stand.centerScreen();
+    stand.centerScreen();
     stand.speedUp();
     goFishAlKharid();
     console.log('Finished');
