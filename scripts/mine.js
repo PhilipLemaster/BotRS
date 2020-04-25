@@ -1,15 +1,18 @@
 const robot = require('robotjs');
-
-function sleep(ms) {
-    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
-}
+const stand = require('./standards');
 
 function main() {
     console.log('Initializing...');
     sleep(4000);
+    goMineLumbridge();
     mine();
     console.log('Finished');
     
+}
+
+function goMineLumbridge() {
+    robot.moveMouseSmooth(884, 563);
+    robot.mouseClick();
 }
 
 function mine() {
