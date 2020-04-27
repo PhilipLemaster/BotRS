@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/PhilipLemaster/Code-Goons-App/issues"
   },
-  "homepage": "https://github.com/PhilipLemaster/Code-Goons-App#readme"
+  "homepage": "https://github.com/PhilipLemaster/Code-Goons-App#readme",
+  "dependencies": {
+    "robotjs": "^0.6.0"
+  }
 }
