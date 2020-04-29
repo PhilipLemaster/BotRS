@@ -171,7 +171,7 @@ body, html {
 
 .fishing {
 	background: #56ab2f; 
-	background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  
+	background: -webkit-linear-gradient(to right, #a8e063, #75a55e);  
 	background: linear-gradient(to right, #a8e063, #56ab2f);
 	box-shadow: 0 10px 40px lightgreen;
 }
