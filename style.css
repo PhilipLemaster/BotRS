@@ -1,0 +1,289 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+#Map {
+    background: url('https://vignette.wikia.nocookie.net/runescape2/images/6/6d/Gielinor_map_poster.png/revision/latest?cb=20180919021332') top center no-repeat;
+    height: 920px;
+}
+
+#map-box {
+	background: url('https://i2.wp.com/azgaar.files.wordpress.com/2019/07/antique-big.jpg') 00 repeat;
+	padding: 75px 0;
+	background-size: cover;
+} 
+
+#grey-box {
+    background: url('https://snakeriverbrewing.com/wp-content/uploads/2016/03/Footer-background.jpg') 00 repeat;
+    padding: 45px 0;
+}
+
+#gif-box {
+	background: url('https://thumbs.gfycat.com/LikelyBlackCollie-small.gif')no-repeat;
+	width: 445px;
+	height: 100px;
+	padding: 75px 0;
+	margin-top: 80px;
+	margin-left: 700px;
+	background-position: center;
+	
+	box-shadow: 0 10px 20px lightgreen;
+}
+
+ #text {
+	 margin-left: -700px;
+	margin-top: -50px;
+	color: rgb(54, 51, 51);
+	text-shadow:
+		-1px 1px 0 rgb(82, 69, 69);
+		
+ }
+	
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+
+
+
+.banner {
+	position: relative;
+	z-index: 1;
+	margin: 80px auto;
+	width: 330px;
+}
+
+.banner .line {
+	margin: 0 0 10px;
+	width: 100%;
+	height: 78px;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3em;
+	line-height: 78px;
+	transform: skew(0, -15deg);
+}
+
+.banner .line:after,
+.banner .line:first-child:before {
+	position: absolute;
+	top: 44px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 330px;
+	height: 78px;
+	border-radius: 4px;
+	background: rgba(180,180,180,0.8);
+	content: '';
+	transform: skew(0, 15deg);
+}
+
+.banner .line:first-child:before {
+	top: -10px;
+	right: 0;
+	left: auto;
+}
+
+.banner .line:first-child:before,
+.banner .line:last-child:after {
+	width: 0;
+	height: 0;
+	border-width: 38px;
+	border-style: solid;
+	border-color: rgba(180,180,180,0.8) rgba(180,180,180,0.8) transparent transparent;
+	background: transparent;
+}
+
+.banner .line:last-child:after {
+	top: 12px;
+	border-color: transparent transparent rgba(180,180,180,0.8) rgba(180,180,180,0.8);
+}
+
+.banner span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	background: rgba(255,255,255,0.9);
+	color: rgb(78, 65, 7);
+	text-shadow: 1px 1px 0 rgb(0, 0, 0);
+}
+
+.wrapper h1 {
+	color: #eee;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin: 0.5em 0;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.wrapper {
+	top: 120px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+}
+
+.page_categories {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+
+.popular_games {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.popular-card {
+	width: 190px;
+	height: 300px;
+	margin: 10px;
+	background: #000;
+	border-radius: 4px;
+	transition: 200ms ease-in-out;
+}
+.popular-card:hover {
+	margin-top: -1px;
+}
+.popular_games {
+	width: 100%;
+	margin-top: 100px;
+}
+
+
+.wood {
+	background: #ee0979; 
+	background: -webkit-linear-gradient(to right, #ff6a00, #ee0979); 
+	background: linear-gradient(to right, #ff6a00, #ee0979); 
+	box-shadow: 0 3px 40px tomato;
+}
+
+.fishing {
+	background: #56ab2f; 
+	background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  
+	background: linear-gradient(to right, #a8e063, #56ab2f);
+	box-shadow: 0 10px 40px lightgreen;
+}
+.mining {
+	background: #ff00cc;
+	background: -webkit-linear-gradient(to right, #333399, #ff00cc);  
+	background: linear-gradient(to right, #333399, #ff00cc); 
+	box-shadow: 0 10px 40px violet;
+}
+
+
+.img_container {
+	width: 120px;
+	height: 120px;
+	margin: 30px auto;
+	margin-left: 30px;
+	border-radius: 100px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: 0 0px 30px rgba(0,0,0,0.5);
+	
+}
+
+.title {
+	color: #fff;
+	font-size: 20px;
+	margin-top: -20px;
+	font-weight: 100;
+	margin-left: 60px;
+}
+
+.title2 {
+	color: #fff;
+	font-size: 20px;
+	margin-top: -20px;
+	font-weight: 100;
+	margin-left: 40px;
+}
+
+.collect_button {
+	color: #fff;
+	width: 65%;
+	border: none;
+	padding: 15px;
+	outline: none;
+	background: rgba(225,225,225,0.2);
+	margin-top: 10px;
+	font-size: 15px;
+	border-radius: 9px;
+	text-decoration: none;
+	box-shadow: 0 0px 20px rgba(0,0,0,0.2);
+	transition: 200ms ease-in-out;
+	margin-left: 35px;
+}
+
+.collect_button:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	background: rgba(225,225,225,0.4);
+}
+
+@media only screen and (max-width: 1105px) {
+	.new_games {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 913px) {
+	.cats {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 737px) {
+	.register {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 617px) {
+	.login {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.fire_games_search input {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 490px) {
+	.fire_games_search input, .fa-search {
+		display: none;
+	}
+	
+	.fire_games_logo {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
