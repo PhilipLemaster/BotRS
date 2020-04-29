@@ -39,6 +39,20 @@ function goFishAlKharid() {
     stand.sleep(7000);
     robot.moveMouseSmooth(1893, 143);
     robot.mouseClick();
+    stand.sleep(7000);
+    robot.moveMouseSmooth(1839, 179);
+    robot.mouseClick();
+    stand.sleep(7000);
+    robot.moveMouseSmooth(1835, 180);
+    robot.mouseClick();
+    stand.sleep(7000);
+    robot.moveMouseSmooth(1824, 178);
+    robot.mouseClick();
+    stand.sleep(7000);
+    robot.moveMouseSmooth(1803, 169);
+    robot.mouseClick();
+    stand.sleep(7000);
+
 }
 
 function check() {
@@ -46,4 +60,4 @@ function check() {
     stand.speedUp();
 }
 
-check();
+main();
