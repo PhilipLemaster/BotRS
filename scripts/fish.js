@@ -8,8 +8,7 @@ function main() {
     stand.centerScreen();
     stand.speedUp();
     goFishAlKharid();
-    console.log('Finished');
-    
+    console.log('Finished'); 
 }
 
 function goFishAlKharid() {
@@ -54,10 +53,3 @@ function goFishAlKharid() {
     stand.sleep(7000);
 
 }
-
-function check() {
-    stand.sleep(2000);
-    stand.speedUp();
-}
-
-main();
