@@ -8,8 +8,7 @@ function main() {
     stand.centerScreen();
     stand.speedUp();
     goFishAlKharid();
-    console.log('Finished');
-    
+    console.log('Finished'); 
 }
 
 function goFishAlKharid() {
@@ -39,11 +38,18 @@ function goFishAlKharid() {
     stand.sleep(7000);
     robot.moveMouseSmooth(1893, 143);
     robot.mouseClick();
-}
+    stand.sleep(7000);
+    robot.moveMouseSmooth(1839, 179);
+    robot.mouseClick();
+    stand.sleep(7000);
+    robot.moveMouseSmooth(1835, 180);
+    robot.mouseClick();
+    stand.sleep(7000);
+    robot.moveMouseSmooth(1824, 178);
+    robot.mouseClick();
+    stand.sleep(7000);
+    robot.moveMouseSmooth(1803, 169);
+    robot.mouseClick();
+    stand.sleep(7000);
 
-function check() {
-    stand.sleep(2000);
-    stand.speedUp();
 }
-
-check();

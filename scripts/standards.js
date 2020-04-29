@@ -49,5 +49,16 @@ module.exports = {
     centerScreen: function() {
         robot.moveMouseSmooth(1761, 45);
         robot.mouseClick();
+    },
+
+    setZoom: function() {
+        this.sleep(2000)
+        robot.moveMouseSmooth(1838, 1022);
+        robot.mouseClick();
+        robot.moveMouseSmooth(1785, 805);
+        robot.mouseToggle("down");
+        robot.dragMouse(1833, 804);
+        robot.mouseToggle("up");
+
     }
 };
