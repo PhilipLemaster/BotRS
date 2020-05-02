@@ -3,6 +3,7 @@ const path = require('path');
 const session = require('express-session');
 const passport = require('./config/passport');
 
+const stand = require('./public/scripts/standards');
 const mine = require('./public/scripts/mine');
 const fish = require('./public/scripts/fish');
 
