@@ -246,6 +246,12 @@ body, html {
 
 
 
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+
+
 
 
 
