@@ -1,10 +1,2 @@
-DROP DATABASE IF EXISTS nodelogin;
 CREATE DATABASE nodelogin DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE nodelogin;
-
-CREATE TABLE users(
-    id INT NOT NULL AUTO_INCREMENT,
-    email VARCHAR(50) NOT NULL,
-    password VARCHAR(20) NOT NULL,
-    PRIMARY KEY(id)
-);
