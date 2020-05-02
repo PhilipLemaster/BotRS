@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 
+const stand = require('./public/scripts/standards');
 const mine = require('./public/scripts/mine');
 const fish = require('./public/scripts/fish');
 
