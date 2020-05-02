@@ -10,11 +10,11 @@ body, html {
 
 #map-box {
 	background: url('https://i2.wp.com/azgaar.files.wordpress.com/2019/07/antique-big.jpg') 00 repeat;
-	padding: 75px 0;
+	padding: 145px 0;
 	background-size: cover;
 } 
 
-#grey-box {
+#wood-box {
     background: url('https://snakeriverbrewing.com/wp-content/uploads/2016/03/Footer-background.jpg') 00 repeat;
     padding: 45px 0;
 }
@@ -23,7 +23,7 @@ body, html {
 	background: url('https://thumbs.gfycat.com/LikelyBlackCollie-small.gif')no-repeat;
 	width: 445px;
 	height: 100px;
-	padding: 75px 0;
+	padding: 125px 0;
 	margin-top: 80px;
 	margin-left: 700px;
 	background-position: center;
@@ -32,18 +32,29 @@ body, html {
 }
 
  #text {
-	 margin-left: -700px;
-	margin-top: -50px;
-	color: rgb(54, 51, 51);
-	text-shadow:
-		-1px 1px 0 rgb(82, 69, 69);
+	margin-left: -700px;
+	margin-top: -180px;
+	color: rgb(48, 47, 47);
+	text-shadow: -1px 1px 0 rgb(75, 68, 68);
 		
  }
+
+.nav-wrapper {
+	 border-bottom: 1px solid rgb(0, 0, 0); 
+}
+
+ .brand-logo {
+	 margin-top: 1px;
+ }
+
+ .example_image {
+	margin-top: 30px;
 	
+}
 
-@import url(https://fonts.googleapis.com/css?family=Oswald:400);
-
-
+.line{
+	font-family: 'Lobster Two', cursive;
+}
 
 .banner {
 	position: relative;
@@ -64,7 +75,7 @@ body, html {
 	transform: skew(0, -15deg);
 }
 
-.banner .line:after,
+/* .banner .line:after,
 .banner .line:first-child:before {
 	position: absolute;
 	top: 44px;
@@ -74,10 +85,10 @@ body, html {
 	width: 330px;
 	height: 78px;
 	border-radius: 4px;
-	background: rgba(180,180,180,0.8);
+	background: rgba(58, 57, 57, 0.8);
 	content: '';
 	transform: skew(0, 15deg);
-}
+} */
 
 .banner .line:first-child:before {
 	top: -10px;
@@ -85,28 +96,28 @@ body, html {
 	left: auto;
 }
 
-.banner .line:first-child:before,
+/* .banner .line:first-child:before,
 .banner .line:last-child:after {
 	width: 0;
 	height: 0;
 	border-width: 38px;
 	border-style: solid;
-	border-color: rgba(180,180,180,0.8) rgba(180,180,180,0.8) transparent transparent;
+	border-color: rgba(58, 57, 57, 0.8) rgba(58, 57, 57, 0.8) transparent transparent;
 	background: transparent;
-}
+} */
 
-.banner .line:last-child:after {
+/* .banner .line:last-child:after {
 	top: 12px;
-	border-color: transparent transparent rgba(180,180,180,0.8) rgba(180,180,180,0.8);
-}
+	border-color: transparent transparent rgba(58, 57, 57, 0.8) rgba(58, 57, 57, 0.8);
+} */
 
 .banner span {
 	display: block;
 	width: 100%;
 	height: 100%;
 	border-radius: 4px;
-	background: rgba(255,255,255,0.9);
-	color: rgb(78, 65, 7);
+	background: rgba(35, 47, 53, 0.9);
+	color: rgb(233, 196, 32);
 	text-shadow: 1px 1px 0 rgb(0, 0, 0);
 }
 
@@ -138,9 +149,7 @@ body, html {
 	justify-content: center;
 }
 
-
-
-.popular_games {
+.Rune_games {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -172,7 +181,7 @@ body, html {
 .fishing {
 	background: #56ab2f; 
 	background: -webkit-linear-gradient(to right, #a8e063, #75a55e);  
-	background: linear-gradient(to right, #a8e063, #56ab2f);
+	background: linear-gradient(to right, #b1db80, #56ab2f);
 	box-shadow: 0 10px 40px lightgreen;
 }
 .mining {
@@ -234,46 +243,8 @@ body, html {
 	background: rgba(225,225,225,0.4);
 }
 
-@media only screen and (max-width: 1105px) {
-	.new_games {
-		display: none;
-	}
-}
 
-@media only screen and (max-width: 913px) {
-	.cats {
-		display: none;
-	}
-}
 
-@media only screen and (max-width: 737px) {
-	.register {
-		display: none;
-	}
-}
-
-@media only screen and (max-width: 617px) {
-	.login {
-		display: none;
-	}
-}
-
-@media only screen and (max-width: 450px) {
-	.fire_games_search input {
-		width: 90%;
-	}
-}
-
-@media only screen and (max-width: 490px) {
-	.fire_games_search input, .fa-search {
-		display: none;
-	}
-	
-	.fire_games_logo {
-		width: 100%;
-		text-align: center;
-	}
-}
 
 
 
