@@ -2,8 +2,8 @@ const robot = require('robotjs');
 const stand = require('./standards');
 const mine = require ('./mine');
 
-stand.sleep(3000);
-mine.main();
+// stand.sleep(3000);
+// mine.main();
 // stand.emptyInventory();
 
 
@@ -16,12 +16,12 @@ mine.main();
 //     robot.keyTap('left');
 // }
 
-// check();
-// function check() {
-//     stand.sleep(4000);
-//     pixColor = robot.getPixelColor(910, 303);
-//     console.log(pixColor);
-// }
+check();
+function check() {
+    stand.sleep(4000);
+    pixColor = robot.getPixelColor(1748, 85);
+    console.log(pixColor);
+}
 
 
 

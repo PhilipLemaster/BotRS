@@ -68,7 +68,7 @@
                 <img class="img_container" src="assets/images/ore1.png" alt="">
                 <h4 class="title">Mining</h4>
                 <button class="collect_button" href="#" id="mineButton">
-                    <i class="fas fa-download"></i> Collect
+                    <i class="fas fa-download" id="mineBut"></i> Collect
                 </button>
             </div>
             <div class="fishing popular-card">
@@ -89,7 +89,14 @@
             </div>
         </section>
         
-         <img class="example_image" src="assets/images/Panel.png" alt="">
-                       
+         <img class="example_image" src="assets/images/Panel.png" alt="">   
+<script>
+   $("#mineButton").click(function (){
+        $.ajax({
+            url: "/mining",
+            type: "GET"            
+        });
+    });
+</script>    
 </body>
 </html>
