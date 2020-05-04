@@ -60,7 +60,7 @@
             <div class="wood popular-card">
                 <img class="img_container" src="assets/images/logs.png" alt="">
                 <h4 class="title2">Woodcutting</h4>
-                <button class="collect_button" href="#">
+                <button class="collect_button" href="#" id="woodButton">
                     <i class="fas fa-download"></i> Collect
                 </button>
             </div>
@@ -75,7 +75,7 @@
             <div class="fishing popular-card">
                 <img class="img_container" src="assets/images/shrimp.png" alt="">
                 <h4 class="title">Fishing</h4>
-                <button class="collect_button" href="#">
+                <button class="collect_button" href="#" id="fishButton">
                     <i class="fas fa-download"></i> Collect
                 </button>
             </div>
@@ -95,6 +95,20 @@
    $("#mineButton").click(function (){
         $.ajax({
             url: "/mining",
+            type: "GET"            
+        });
+    });
+
+    $("#fishButton").click(function (){
+        $.ajax({
+            url: "/fishing",
+            type: "GET"            
+        });
+    });
+
+    $("#woodButton").click(function (){
+        $.ajax({
+            url: "/cutting",
             type: "GET"            
         });
     });

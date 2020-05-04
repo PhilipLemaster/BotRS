@@ -5,3 +5,16 @@ Run Toggle  --  1758 x 152
 Inventory -- 1608 x 1020
 Spellbook  --  1706 x 1020
 Lumbridge Home Teleport  --  1740 x 747
+
+Fishing spots:
+
+SECOND SPOT LOCS
+858 x 717 -- 1050 x 584 getback
+981 x 724 -- no getback
+1266 x 948 --  679 x 382 getback
+
+1811 x 83 -- SECOND SPOT TO FIRST
+
+FIRST SPOT LOCS
+980 x 1014  -- 843 x 314 getback
+819 x 863 -- 1057 x 409 getback
