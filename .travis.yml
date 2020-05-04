@@ -1,1 +1,2 @@
-language: node.js
+language: node_js,
+os: windows
