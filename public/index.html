@@ -60,7 +60,7 @@
             <div class="wood popular-card">
                 <img class="img_container" src="assets/images/logs.png" alt="">
                 <h4 class="title2">Woodcutting</h4>
-                <button class="collect_button" href="#">
+                <button class="collect_button" href="#" id="woodButton">
                     <i class="fas fa-download"></i> Collect
                 </button>
             </div>
@@ -69,13 +69,13 @@
                 <img class="img_container" src="assets/images/ore1.png" alt="">
                 <h4 class="title">Mining</h4>
                 <button class="collect_button" href="#" id="mineButton">
-                    <i class="fas fa-download"></i> Collect
+                    <i class="fas fa-download" id="mineBut"></i> Collect
                 </button>
             </div>
             <div class="fishing popular-card">
                 <img class="img_container" src="assets/images/shrimp.png" alt="">
                 <h4 class="title">Fishing</h4>
-                <button class="collect_button" href="#">
+                <button class="collect_button" href="#" id="fishButton">
                     <i class="fas fa-download"></i> Collect
                 </button>
             </div>
@@ -85,13 +85,36 @@
             <div class="flex">
                 <div class="game-warrior">
                    <img class="footer-graphic"> 
-                   <div id="text"> <h3>Instructions:</h3></b><p><i> 1. To begin open your Runescape launcher and log in.<br><br> 2. Make sure your settings look like the image reference below.<br><br> 3. Have your character match the same starting location as shown in the image (Lumbridge).<br><br> 4. Select a desired task in one of the colored boxes.<br><br> 5. Switch to your Runescape application screen.<br><br> 6. Let the bot take over.</i><br><br><br><br><br><br><br><br><br><br><br><br><br>(To cancel the bot refresh the webpage)</p>
+                   <div id="text"> <h3>Instructions:</h3></b><p><i> 1. To begin open your Runescape launcher and log in.<br><br> 2. Make sure your settings look like the image reference below.<br><br> 3. Have your character match the same starting location as shown in the image (Lumbridge).<br><br> 4. Select a desired task in one of the colored boxes.<br><br> 5. Switch to your Runescape application screen.<br><br> 6. Let the bot take over.</i><br><br><br><br><br><br><br><br><br><br><br><br><br>(To cancel the bot minimize tab or alt+tab)</p>
                 </div>   
             </div>
         </section>
         
          <img class="example_image" src="assets/images/Panel.png" alt="">
          <img class="example2_image" src="assets/images/starting.png" alt="">
+<script>
+   $("#mineButton").click(function (){
+        $.ajax({
+            url: "/mining",
+            type: "GET"            
+        });
+    });
+
+    $("#fishButton").click(function (){
+        $.ajax({
+            url: "/fishing",
+            type: "GET"            
+        });
+    });
+
+    $("#woodButton").click(function (){
+        $.ajax({
+            url: "/cutting",
+            type: "GET"            
+        });
+    });
+</script>    
+         
                        
 </body>
 </html>

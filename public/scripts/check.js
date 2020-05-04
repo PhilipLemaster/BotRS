@@ -1,11 +1,15 @@
 const robot = require('robotjs');
 const stand = require('./standards');
 const mine = require ('./mine');
+const fish = require ('./fish');
 
-stand.sleep(3000);
-mine.main();
+// stand.sleep(3000);
+// mine.main();
 // stand.emptyInventory();
 
+stand.sleep(3000);
+fish.checkFish0();
+// fish.totalCheck();
 
 // stand.setZoom();
 
@@ -19,9 +23,23 @@ mine.main();
 // check();
 // function check() {
 //     stand.sleep(4000);
-//     pixColor = robot.getPixelColor(910, 303);
+//     pixColor = robot.getPixelColor(845, 383);
 //     console.log(pixColor);
 // }
+
+// check();
+// function check() {
+//     stand.sleep(2000);
+//     robot.moveMouseSmooth(976, 722);
+//     robot.mouseClick();
+//     stand.sleep(100);
+//     fishActive = robot.getPixelColor(976,722);
+//     console.log(fishActive);
+//     console.log('We did it boiz');
+// }
+
+
+    
 
 
 

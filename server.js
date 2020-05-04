@@ -6,6 +6,7 @@ const passport = require('./config/passport');
 const stand = require('./public/scripts/standards');
 const mine = require('./public/scripts/mine');
 const fish = require('./public/scripts/fish');
+const cut = require('./public/scripts/cut');
 
 const app = express();
 const PORT = process.env.PORT || '8080';
@@ -25,6 +26,10 @@ app.get("/", function(req, res) {
 
 app.get('/mining', function(req, res) {
     mine.main();
+})
+
+app.get('/cutting', function(req, res) {
+    cut.main();
 })
 
 app.get('/fishing', function(req, res) {
