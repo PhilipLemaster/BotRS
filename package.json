@@ -1,37 +1,32 @@
 {
-  "name": "botrs",
+  "name": "bot-rs",
   "version": "1.0.0",
-  "description": "Web app of awesome purpose.",
-  "main": "server.js",
   "engines": {
     "node": "12.16.1",
     "npm": "6.13.4"
   },
-  "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon ./server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PhilipLemaster/Code-Goons-App.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PhilipLemaster/Code-Goons-App/issues"
-  },
-  "homepage": "https://github.com/PhilipLemaster/Code-Goons-App#readme",
+  "description": "Automated robot for farming in Runescape",
+  "main": "server.js",
   "dependencies": {
-    "bcryptjs": "2.4.3",
     "express": "^4.17.1",
-    "express-session": "^1.16.1",
     "keypress": "^0.2.1",
     "mysql2": "^1.7.0",
     "nodemon": "^2.0.3",
-    "passport": "^0.4.0",
-    "passport-local": "^1.0.0",
-    "robotjs": "^0.6.0",
-    "sequelize": "^5.8.6"
-  }
+    "robotjs": "^0.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhilipLemaster/BotRS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhilipLemaster/BotRS/issues"
+  },
+  "homepage": "https://github.com/PhilipLemaster/BotRS#readme"
 }
