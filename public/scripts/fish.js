@@ -6,6 +6,7 @@ module.exports = {
 main: function() {
     console.log('Initializing...');
     stand.sleep(4000);
+    stand.setZoom();
     stand.centerScreen();
     stand.speedUp();
     this.goFish();
@@ -91,8 +92,6 @@ checkFish0: function() {
     else if (checkColor === 'ff0000') {
         console.log('Looks like we got some fish!');
         stand.sleep(60000);
-        fishCount+= 3;
-        fishXP+= 30;
         stand.emptyInventory();
         robot.moveMouseSmooth(1057, 409);
         robot.mouseClick();
@@ -126,8 +125,6 @@ checkFish1: function() {
     else if (checkColor === 'ff0000') {
         console.log('Looks like we got some fish!');
         stand.sleep(60000);
-        fishCount+= 3;
-        fishXP+= 30;
         stand.emptyInventory();
         robot.moveMouseSmooth(843, 314);
         robot.mouseClick();
@@ -159,8 +156,6 @@ checkFish2: function() {
     else if (checkColor === 'ff0000') {
         console.log('Looks like we got some fish!');
         stand.sleep(60000);
-        fishCount+= 3;
-        fishXP+= 30;
         stand.emptyInventory();
         robot.moveMouseSmooth(1050, 584);
         robot.mouseClick();
@@ -190,8 +185,6 @@ checkFish3: function() {
     else if (checkColor === 'ff0000') {
         console.log('Looks like we got some fish!');
         stand.sleep(60000);
-        fishCount+= 3;
-        fishXP+= 30;
         stand.emptyInventory();
         robot.moveMouseSmooth(1050, 584);
         robot.mouseClick();
@@ -225,8 +218,6 @@ checkFish4: function() {
     else if (fishActive === 'ff0000') {
         console.log('Looks like we got some fish!');
         stand.sleep(60000);
-        fishCount+= 3;
-        fishXP+= 30;
         stand.emptyInventory();
         robot.moveMouseSmooth(679, 382);
         robot.mouseClick();

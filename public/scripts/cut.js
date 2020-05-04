@@ -7,6 +7,7 @@ module.exports = {
     main: function() {
         console.log('Initializing...');
         stand.sleep(6000);
+        stand.setZoom();
         stand.centerScreen();
         stand.speedUp();
         this.goCut();
