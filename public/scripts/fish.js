@@ -73,8 +73,13 @@ checkFish0: function() {
     stand.sleep(100);
     checkColor = robot.getPixelColor(819, 863);
     console.log(checkColor);
+    runescapeColor = robot.getPixelColor(1748, 85);
+    if (runescapeColor !== 'd83003') {
+        console.log('Escaped'); 
+        return; 
+    }
     // inactive
-    if (checkColor === 'ffff00') {
+    else if (checkColor === 'ffff00') {
         stand.sleep(2000);
         console.log('Onto the next one..');
         robot.moveMouseSmooth(1057, 409);
@@ -100,8 +105,13 @@ checkFish1: function() {
     stand.sleep(100);
     checkColor = robot.getPixelColor(980,1014);
     console.log(checkColor);
+    runescapeColor = robot.getPixelColor(1748, 85);
+    if (runescapeColor !== 'd83003') {
+        console.log('Escaped'); 
+        return; 
+    }
     // inactive
-    if (checkColor === 'ffff00') {
+    else if (checkColor === 'ffff00') {
         stand.sleep(2000);
         console.log('Onto the next one..');
         robot.moveMouseSmooth(843, 314);
@@ -127,8 +137,13 @@ checkFish2: function() {
     robot.mouseClick();
     stand.sleep(100);
     checkColor = robot.getPixelColor(858,717);
+    runescapeColor = robot.getPixelColor(1748, 85);
+    if (runescapeColor !== 'd83003') {
+        console.log('Escaped'); 
+        return; 
+    }
     // inactive
-    if (checkColor === 'ffff00') {
+    else if (checkColor === 'ffff00') {
         stand.sleep(2000);
         console.log('Onto the next one..');
         robot.moveMouseSmooth(1050, 584);
@@ -154,8 +169,13 @@ checkFish3: function() {
     robot.mouseClick();
     stand.sleep(100);
     checkColor = robot.getPixelColor(981,724);
+    runescapeColor = robot.getPixelColor(1748, 85);
+    if (runescapeColor !== 'd83003') {
+        console.log('Escaped'); 
+        return; 
+    }
     // inactive
-    if (checkColor === 'ffff00') {
+    else if (checkColor === 'ffff00') {
         stand.sleep(2000);
         console.log('Onto the next one..');
         this.checkFish4();
@@ -178,8 +198,13 @@ checkFish4: function() {
     robot.mouseClick();
     stand.sleep(100);
     fishActive = robot.getPixelColor(1266,948);
+    runescapeColor = robot.getPixelColor(1748, 85);
+    if (runescapeColor !== 'd83003') {
+        console.log('Escaped'); 
+        return; 
+    }
     // inactive
-    if (fishActive === 'ffff00') {
+    else if (fishActive === 'ffff00') {
         stand.sleep(2000);
         console.log('Onto the next one..');
         robot.moveMouseSmooth(679, 382);

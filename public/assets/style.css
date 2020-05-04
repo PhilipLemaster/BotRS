@@ -14,6 +14,12 @@ body, html {
 	background-size: cover;
 } 
 
+#map2-box {
+	background: url('https://i.imgur.com/KNqmdiV.png') top center no-repeat;
+	height: 920px;
+	background-size: cover;
+} 
+
 #wood-box {
     background: url('https://snakeriverbrewing.com/wp-content/uploads/2016/03/Footer-background.jpg') 00 repeat;
     padding: 45px 0;
@@ -39,6 +45,11 @@ body, html {
 		
  }
 
+ #text2 {
+	color: #ff6a00;
+	
+ }
+
 .nav-wrapper {
 	 border-bottom: 1px solid rgb(0, 0, 0); 
 }
@@ -48,6 +59,11 @@ body, html {
  }
 
  .example_image {
+	margin-top: 30px;
+	
+}
+
+.example2_image {
 	margin-top: 30px;
 	
 }
