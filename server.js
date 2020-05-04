@@ -6,6 +6,7 @@ const passport = require('./config/passport');
 const stand = require('./public/scripts/standards');
 const mine = require('./public/scripts/mine');
 const fish = require('./public/scripts/fish');
+const cut = require('./public/scripts/cut');
 
 const app = express();
 const PORT = process.env.PORT || '8080';
@@ -19,16 +20,16 @@ app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true 
 app.use(passport.initialize());
 app.use(passport.session());
 
-// app.listen(PORT, () => {
-//     // console.log(`Listening on http:/localhost:${PORT}`);
-// })
-
 app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.get('/mining', function(req, res) {
     mine.main();
+})
+
+app.get('/cutting', function(req, res) {
+    cut.main();
 })
 
 app.get('/fishing', function(req, res) {

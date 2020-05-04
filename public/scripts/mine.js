@@ -12,7 +12,6 @@ module.exports = {
         stand.speedUp();
         this.goMine();
         this.mineTin();
-        console.log('Finished');
     },
 
     goMine: function() {
@@ -50,8 +49,14 @@ module.exports = {
     },
     
     repeatMineTin: function() {
+        
         pixColor = robot.getPixelColor(847, 549);
-            if (pixColor === '645b5b' || pixColor === '605757'  || pixColor === '625959' || pixColor === '665d5d' || pixColor === '665d5d') {
+        runescapeColor = robot.getPixelColor(1748, 85);
+            if (runescapeColor !== 'd83003') { 
+                console.log('Escaped');
+                return; 
+            }
+            else if (pixColor === '645b5b' || pixColor === '605757'  || pixColor === '625959' || pixColor === '665d5d' || pixColor === '665d5d') {
                 stand.sleep(500);
                 this.repeatMineTin();
             }
@@ -81,7 +86,13 @@ module.exports = {
     
     repeatMineCopper: function() {
         pixColor = robot.getPixelColor(1121, 565);
-            if (pixColor === '6b4626' || pixColor === '7e522c') {
+        runescapeColor = robot.getPixelColor(1748, 85);
+            if (runescapeColor !== 'd83003') {
+                console.log('Escaped'); 
+                return; 
+            }
+
+            else if (pixColor === '6b4626' || pixColor === '7e522c') {
                 stand.sleep(500);
                 this.repeatMineCopper();
             }
@@ -91,6 +102,8 @@ module.exports = {
                 robot.moveMouseSmooth(662, 467);
                 robot.mouseClick();
                 stand.sleep(4000);
+                tinCount = 0;
+                copperCount = 0;
                 this.repeatMineTin();
             }
     
