@@ -2,13 +2,18 @@ const robot = require('robotjs');
 const stand = require('./standards');
 const mine = require ('./mine');
 const fish = require ('./fish');
+const cut = require ('./cut');
 
 // stand.sleep(3000);
 // mine.main();
 // stand.emptyInventory();
 
+// stand.sleep(3000);
+// fish.checkFish0();
+
 stand.sleep(3000);
-fish.checkFish0();
+cut.main();
+
 // fish.totalCheck();
 
 // stand.setZoom();
