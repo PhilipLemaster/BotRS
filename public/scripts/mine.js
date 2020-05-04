@@ -66,6 +66,8 @@ module.exports = {
             } 
     
             else if (pixColor === '35302f' || pixColor === '3e3838' || pixColor === '322e2e' || pixColor === '2a2626') {
+                oreCount++;
+                oreXp+= 17.5;
                 tinCount++;
                 console.log(tinCount);
                 stand.sleep(2500);
@@ -108,6 +110,8 @@ module.exports = {
             }
     
             else if (pixColor === '373131') {
+                oreCount++;
+                oreXp+= 17.5;
                 copperCount++;
                 stand.sleep(2500);
                 robot.moveMouseSmooth(1106, 583);
