@@ -2,8 +2,8 @@
   "name": "bot-rs",
   "version": "1.0.0",
   "engines": {
-    "node": "14.1.0",
-    "npm": "6.13.4"
+    "node": "14.1.x",
+    "npm": "6.13.x"
   },
   "description": "Automated robot for farming in Runescape",
   "main": "server.js",
