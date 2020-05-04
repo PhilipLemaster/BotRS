@@ -8,11 +8,17 @@
   "description": "Automated robot for farming in Runescape",
   "main": "server.js",
   "dependencies": {
+    "12": "^1.0.2",
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
-    "keypress": "^0.2.1",
+    "express-session": "^1.17.1",
+    "mysql": "^2.18.1",
     "mysql2": "^1.7.0",
     "nodemon": "^2.0.3",
-    "robotjs": "^0.6.0"
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "robotjs": "^0.6.0",
+    "sequelize": "^5.21.7"
   },
   "devDependencies": {},
   "scripts": {
@@ -28,5 +34,7 @@
   "bugs": {
     "url": "https://github.com/PhilipLemaster/BotRS/issues"
   },
+
   "homepage": "https://github.com/PhilipLemaster/BotRS#readme"
+
 }

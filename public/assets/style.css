@@ -46,8 +46,7 @@ body, html {
  }
 
  #text2 {
-	color: #ff6a00;
-	
+	font-family: 'Courier New', Courier, monospace;
  }
 
 .nav-wrapper {
