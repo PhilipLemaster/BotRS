@@ -9,7 +9,7 @@ const fish = require('./public/scripts/fish');
 const cut = require('./public/scripts/cut');
 
 const app = express();
-const PORT = process.env.PORT || '8080';
+const PORT = process.env.PORT || '80';
 var db = require('./models');
 
 app.use(express.urlencoded({ extended: true}));
