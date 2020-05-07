@@ -1,7 +1,7 @@
- ![badge image](https://img.shields.io/badge/BotJS-OSRS-blue "Project Badge") 
- ![badge image2](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FPhilipLemaster2 "Project Badge 2")
+![badge image](https://img.shields.io/badge/BotJS-OSRS-blue "Project Badge") 
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FPhilipLemaster2)](https://twitter.com/intent/tweet?text=Nice!&url=https%3A%2F%2Fphiliplemaster.github.io%2FBotRS%2F)
  ![badge image3](https://img.shields.io/github/license/PhilipLemaster/BotRS?style=plastic "Project Badge 3")
- ![badge image2](https://img.shields.io/travis/PhilipLemaster/BotRS?style=plastic "Project Badge 2")
+ [![Travis (.com)](https://img.shields.io/travis/com/PhilipLemaster/BotRS?style=plastic)](https://travis-ci.com/github/PhilipLemaster/BotRS)
  
 # BotRS
 
